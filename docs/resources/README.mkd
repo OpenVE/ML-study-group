@@ -2,3 +2,12 @@
 
 The resources folder will have all the resources that we'll be using
 in series of links to foreighn servers.
+
+We'll split resources according to it's type, so in this folder you'll
+find:
+
+-   Books.
+-   Papers.
+-   Online Courses.
+-   Videos.
+
