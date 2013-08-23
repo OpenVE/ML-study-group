@@ -1,0 +1,12 @@
+# ML Study Groups
+
+Title | By | From | Year | Summary
+------|----|------|------|---
+[Work for my machine learning study
+group.](https://github.com/jessicatysu/ML)|
+[jessicatysu](https://github.com/jessicatysu) | Unknown. | 2013 |
+Logistic Regression Linear Regression Bayesian Classifier Decision
+Tree Classifier Neural Networks Support Vector Machines k-Nearest
+Neighbors Spectral Clustering Multidimensional Scaling Non-Negative
+Matrix Factorization Optimization PCA.
+

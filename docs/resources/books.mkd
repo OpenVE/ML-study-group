@@ -1,4 +1,4 @@
-# ML Resources, 2013-08-23
+# ML Resources
 
 Title | By | From | Year | Summary
 ------|----|------|------|---

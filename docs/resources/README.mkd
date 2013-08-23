@@ -10,4 +10,6 @@ find:
 -   Papers.
 -   Online Courses.
 -   Videos.
+-   Libraries.
+-   Study Groups.
 
