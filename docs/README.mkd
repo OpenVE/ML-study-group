@@ -1,0 +1,15 @@
+# ML Docs
+
+Here we will store all the documents in two different folders,
+notes and resources.
+
+## Notes
+
+The notes folder will have all the notes that we consider important
+while learning, as well as some concrete understanding of topics and
+considerations for the future.
+
+## Resources
+
+The resources folder will have all the resources that we'll be using
+in series of links to foreighn servers.
