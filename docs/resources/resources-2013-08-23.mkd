@@ -1,0 +1,9 @@
+# ML Resources, 2013-08-23
+
+-   [Mining of Massive Datasets](http://infolab.stanford.edu/~ullman/mmds/book.pdf)  
+    **By:** Anand Rajaraman, Jure Leskovec and Jeffrey D. Ullman.  
+    **From:** Stanford University.  
+    **Year:** 2010.  
+    **Summary:** It focuses on data mining of very large amounts of data, that is,
+    data so large it does not fit in main memory
+
