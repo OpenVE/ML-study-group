@@ -1,1 +1,50 @@
 # Issue 1
+
+## Machine Learning
+
+Arthur Samuel (1959) defined Machine Learning as: Field of Study that
+gives computers the ability lo learn without being explicitly
+programmed.
+
+## Learning Problem
+
+Tom Michael (1998) says that a computer program is said to learn from
+experience E with respect to some task T and some performance measured
+by P if its performance on T, as measured by P, improves with
+experience E.
+
+## Examples of Machine Learning
+
+DB Mining. Autonomous machines, handwriting recognition, facial
+recognition, natural language processing. Self-customization, like
+Amazon or Netflix recommendations.
+
+## Machine Learning Algorithms
+
+-   Supervised learning.
+-   Unsupervised learning.
+-   Reinforcement learning.
+-   Recommender system.
+
+## Supervised Learning
+
+For example, you have a data composed on points over two axis, A and
+B, which can be, for example, Size and Price. The data is composed by
+the right answers, which means those who are mostly desired to look in
+the future; the algorithm must find more of those answers.
+
+Classification problems are about different kinds of data and linear
+regression about similar data.
+
+## Unsupervised Learning
+
+In unsupervised learning, the algorithm has to discover the
+differencies over all the elements of a dataset.
+
+Examples:
+
+-   Organize computing clusters.
+-   Social networks analysis.
+-   Market segmentation.
+-   Astronomical data analysis.
+
