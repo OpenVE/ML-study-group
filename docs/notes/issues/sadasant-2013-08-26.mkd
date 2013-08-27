@@ -1,0 +1,45 @@
+﻿# Machine Learning
+
+## Model representation
+
+**Supervised learning**: give the *right answer* for example in the
+data.
+
+**Regression Problem:** Predict real-valued output.
+
+**Training Set:** The data that is known before the new data
+arrivesbefore the new data arrives.
+
+**Notation:**
+
+-   **m** = number of training examples.
+-   **x**'s = "input" variable/feature
+-   **y**'s = "output" variable/"target" variable
+-   `(x, y)` one training example.
+-   `(xⁱ, yⁱ)` ith training example.
+
+                              X
+                              ↓
+    TrainingSet → Algorithm → hypothesis
+                              ↓
+                              Y
+
+Representing the hypothesis
+
+    hₒ(x) = Θ₀ + Θ₁ₓ
+    h(x)
+
+Where `Θ` are the parameters of the model.
+
+To minimize `Θ₀Θ₁`:
+
+     m
+     ∑  ( hₒ(xⁱ) - yⁱ ) ²
+    i=1
+
+## Cost Function (Squared Error)
+
+                 1    m
+    J(Θ₀, Θ₁) = ————  ∑  ( hₒ(xⁱ) - yⁱ ) ²
+                 2m  i=1
+
