@@ -1,0 +1,8 @@
+﻿# Machine Learning
+
+Gradient descent algorithm
+
+    t₀ := θ₀ - α(∂/∂Θ₀) J(Θ₀, Θ₁)
+    t₁ := θ₁ - α(∂/∂Θ₁) J(Θ₀, Θ₁)
+    θ₀ := t₀
+    θ₁ := t₁
