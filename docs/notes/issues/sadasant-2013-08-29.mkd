@@ -2,7 +2,73 @@
 
 Gradient descent algorithm
 
-    t₀ := θ₀ - α(∂/∂Θ₀) J(Θ₀, Θ₁)
-    t₁ := θ₁ - α(∂/∂Θ₁) J(Θ₀, Θ₁)
+    t₀ := θ₀ - α (∂/∂Θ₀)J(Θ₀, Θ₁)
+    t₁ := θ₁ - α (∂/∂Θ₁)J(Θ₀, Θ₁)
     θ₀ := t₀
     θ₁ := t₁
+
+## Answer to the first exercise.
+
+I won't install octave right now, so I'll be using:
+`http://www.compileonline.com/execute_matlab_online.php`
+
+**So, the answers, first, the `warmUpExercise`:**
+
+    x = [;]
+    
+    for i = 1:5
+      for j = 1:5
+        i == j && (x (i, j) = 1)
+      endfor
+    endfor
+    
+    x'
+
+But, I searched and one can do this:
+
+    eye(5)
+
+Which does the same.
+
+**Now, the answer for `plotData.m`**
+
+    data = load('input.txt');
+    X = data(:, 1);
+    y = data(:, 2);
+    m = length(y);
+    
+    plot(X, y, 'rx', 'MarkerSize', 10);
+    
+    figure;
+
+**Now, `computeCost.m`**
+
+    data = load('input.txt');
+    X = data(:, 1);
+    y = data(:, 2);
+    m = length(y);
+    
+    X = [ones(m, 1), data(:,1)];
+    theta = zeros(2, 1);
+    
+    J = sum((X * theta - y) .^ 2) / (2*m)
+
+
+**Now, `gradientDescent.m`**
+
+    data = load('input.txt');
+    X = data(:, 1);
+    y = data(:, 2);
+    m = length(y);
+    
+    X = [ones(m, 1), data(:,1)];
+    theta = zeros(2, 1);
+    iterations = 1500;
+    alpha = 0.01;
+    
+    J_history = zeros(iterations, 1);
+    for iter = 1:iterations
+        theta = theta - (alpha/m) * (X' * (X * theta - y))
+        J_history(iter) = sum((X * theta - y) .^ 2) / (2*m)
+    endfor
+
