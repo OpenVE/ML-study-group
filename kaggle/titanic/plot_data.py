@@ -37,3 +37,16 @@ if __name__ == '__main__':
     plt.yticks(np.arange(0, 40, 5))
     plt.savefig('AgeHistogramNonSurvived.png')
 
+    # Plot: Survivers (blue) and non-survivers (red) passengers by sex
+    fig = plt.figure()
+    surv_sex = np.array([(int(d[0]), (1 if d[3] == 'male' else 2), float(d[4])) for d in data if d[3] != '' and d[4] != ''])
+    surv0 = ([p[2] for p in surv_sex if p[0]==0], [p[1] for p in surv_sex if p[0]==0])
+    surv1 = ([p[2] for p in surv_sex if p[0]==1], [p[1] for p in surv_sex if p[0]==1])
+    plt.plot(surv0[0], surv0[1], 'ro')
+    plt.plot(surv1[0], surv1[1], 'bo')
+    plt.xlabel('Age in years')
+    plt.ylabel('Sex')
+    plt.yticks(range(4), ['', 'Male', 'Female', ''])
+    plt.xticks(np.arange(0, 90, 10))
+    plt.savefig('PlotSurvivedByAgeSex.png')
+
